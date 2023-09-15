@@ -209,7 +209,7 @@ function Navbar() {
                                 <div className={classes.drawerItem}>
                                     <FaUser className={classes.drawerIcon} />
                                     <span className={classes.drawerLinks}>
-                                        About
+                                        Sobre
                                     </span>
                                 </div>
                             </NavLink>
@@ -227,7 +227,7 @@ function Navbar() {
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                        Education
+                                        Educação
                                     </span>
                                 </div>
                             </NavLink>
@@ -263,7 +263,7 @@ function Navbar() {
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                        Projects
+                                        Projetos
                                     </span>
                                 </div>
                             </NavLink>
@@ -279,7 +279,7 @@ function Navbar() {
                                 <div className={classes.drawerItem}>
                                     <MdPhone className={classes.drawerIcon} />
                                     <span className={classes.drawerLinks}>
-                                        Contact
+                                        Contato
                                     </span>
                                 </div>
                             </NavLink>
