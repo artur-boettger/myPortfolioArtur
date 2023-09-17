@@ -282,7 +282,7 @@ function Contacts() {
 
                     <div className='contacts-details'>
                         <a
-                            // href={`mailto:${contactsData.email}`}
+                            href={`mailto:${contactsData.email}`}
                             className='personal-details'
                         >
                             <div className={classes.detailsIcon}>
@@ -293,11 +293,13 @@ function Contacts() {
                             </p>
                         </a>
                         <a
-                            // href={`tel:${contactsData.phone}`}
+                            href="https://wa.me/5547991017361?text=Ol%C3%A1,%20vim%20pelo%20seu%20site%20de%20portf%C3%B3lio%20e%20gostaria%20de%20contratar%20seus%20servi%C3%A7os."
                             className='personal-details'
                         >
                             <div className={classes.detailsIcon}>
+
                                 <FiPhone />
+
                             </div>
                             <p style={{ color: theme.tertiary }}>
                                 {contactsData.phone}
