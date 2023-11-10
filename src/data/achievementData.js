@@ -13,14 +13,14 @@ export const achievementData = {
             title : 'Cultura inglesa',
             details : 'Lá aprendi toda a base do meu inglês, com aulas teóricas e práticas de conversação',
             date : '2013 - 2016',
-            field : 'Línguas',
+            field : 'Línguas'
         },
         {
             id : 2,
             title : 'Campeão Catarinense de basquete',
             details : 'Pode não ter uma ligação direta com o mercado de trabalho, porém mostra muita dedicação e trabalho em equipe',
             date : '2017',
-            field : 'Esporte',
+            field : 'Esporte'
         }
 
 

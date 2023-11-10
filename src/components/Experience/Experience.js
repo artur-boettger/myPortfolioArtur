@@ -26,6 +26,7 @@ function Experience() {
                             company={exp.company}
                             startYear={exp.startYear}
                             endYear={exp.endYear}
+                            description={exp.description}
                             />
                     ))}
                  </div>

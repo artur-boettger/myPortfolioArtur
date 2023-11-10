@@ -57,7 +57,6 @@ export const projectsData = [
         tags: [''],
         code: '',
         demo: '',
-        image: ''
 
     },
 
