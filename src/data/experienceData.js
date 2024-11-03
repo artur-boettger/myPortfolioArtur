@@ -2,10 +2,10 @@ export const experienceData = [
     {
         id: 1,
         company: 'FX Log',
-        jobtitle: 'Assistente Administrativo',
+        jobtitle: 'Administrative Assistant',
         startYear: '2020',
         endYear: '2022',
-        description: 'Trabalhei em diferentes áreas da empresa, iniciando no faturamento, em seguida fui alocado para um armazém, onde eu fazia toda a parte de recepção, conferência e expedição de mercadorias, trabalhando com sistemas ERP, planilhas e Trello para a organização das tarefas.'
+        description: 'I worked , starting in billing. Subsequently, I was assigned to a warehouse, where I handled all aspects of receiving, checking, and dispatching goods. I worked with ERP systems, spreadsheets, and Trello for task organization.'
     },
     {
         id: 2,

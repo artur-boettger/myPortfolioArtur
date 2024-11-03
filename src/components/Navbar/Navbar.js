@@ -227,7 +227,7 @@ function Navbar() {
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                        Educação
+                                    Education
                                     </span>
                                 </div>
                             </NavLink>

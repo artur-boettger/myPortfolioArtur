@@ -3,7 +3,7 @@ export const achievementData = {
     achievements : [
         {
             id : 1,
-            title : 'Intercâmbio ELS Language Center Vancouver',
+            title : 'ELS Language Center Vancouver Exchange',
             details : 'Estudo e prática de inglês como segunda língua',
             date : 'Janeiro, 2020',
             field : 'Línguas'

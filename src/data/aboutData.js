@@ -1,6 +1,6 @@
 export const aboutData = {
-    title: "Quem eu sou?",
-    description1: "Olá! Meu nome é Artur Boettger e sou um desenvolvedor web que reside no Brasil.",
-    description2: "Estudo atualmente na Universidade do Vale do Itajaí (Univali) cursando Sistemas para Internet. O objetivo do curso é a formação profissionais especializados na infraestrutura e no desenvolvimento de sistemas para a web. Além da faculdade ainda faço o curso de formação Front-End na Alura. Sou bem proativo na busca por conhecimento utilizando da imensidão de conteúdos disponíveis na internet incluindo  inteligências artificiais.",
+    title: "Who am I?",
+    description1: "Hello! My name is Artur Boettger, and I'm a web developer based in Brazil.",
+    description2: " I'm currently studying Internet Systems at the University of Vale do Itajaí (Univali). The course aims to train professionals specialized in infrastructure and web systems development. In addition to my university studies, Im also taking a Front-End development course at Alura. I'm highly proactive in seeking knowledge, utilizing the vast array of content available on the internet, including artificial intelligence resources.",
     image: 2
 }

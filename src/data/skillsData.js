@@ -1,16 +1,24 @@
- export const skillsData = [
+export const skillsData = [
     'HTML',
     'CSS',
     'Javascript',
     'React',
     'Angular',
+    'Vue',
     'Typescript',
     'Figma',
     'Bootstrap',
     'Tailwind',
     'Docker',
     'PHP',
-    'Firebase'
+    'Firebase',
+    'Next JS',
+    'MongoDB',
+    'ViteJS',
+    'VuetifyJS',
+    'MySQL'
+
+
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
@@ -72,7 +80,6 @@
     Canva
     Ubuntu
     Bootstrap
-    MongoDB
     Tailwind
     ViteJS
     VuetifyJS

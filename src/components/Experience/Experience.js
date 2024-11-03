@@ -1,15 +1,15 @@
-import React,{useContext} from 'react';
-
+import React, { useContext } from 'react';
+import { useTranslation } from 'react-i18next';
 import { ThemeContext } from '../../contexts/ThemeContext';
-
 import './Experience.css';
-
-import { experienceData } from '../../data/experienceData'
 import ExperienceCard from './ExperienceCard';
 
 function Experience() {
-
+    const { t } = useTranslation();
     const { theme } = useContext(ThemeContext);
+    
+    const experienceData = t('experience.data', { returnObjects: true });
+
     return (
         <div className="experience" id="experience" style={{backgroundColor: theme.secondary}}> 
              <div className="experience-body">
@@ -17,8 +17,8 @@ function Experience() {
                      <img src={theme.expimg} alt="" />
                  </div>
                  <div className="experience-description">
-                    <h1 style={{color:theme.primary}}>Experiência</h1>
-                    {experienceData.map(exp =>(
+                    <h1 style={{color:theme.primary}}>{t('experience.title')}</h1>
+                    {experienceData.map(exp => (
                         <ExperienceCard 
                             key={exp.id}
                             id={exp.id}
@@ -27,7 +27,7 @@ function Experience() {
                             startYear={exp.startYear}
                             endYear={exp.endYear}
                             description={exp.description}
-                            />
+                        />
                     ))}
                  </div>
              </div>
@@ -35,4 +35,4 @@ function Experience() {
     )
 }
 
-export default Experience
+export default Experience;

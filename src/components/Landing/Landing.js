@@ -7,18 +7,24 @@ import './Landing.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
+import { useTranslation } from 'react-i18next';
 
 import {
-    FaTwitter,
     FaLinkedin,
     FaGithub,
-    FaYoutube,
-    FaBlogger,
 } from 'react-icons/fa';
 
 function Landing() {
     const { theme, drawerOpen } = useContext(ThemeContext);
 
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (lng) => {
+        console.log(`Changing language to: ${lng}`);
+        console.log('Current language:', i18n.language);
+        i18n.changeLanguage(lng);
+        console.log('New language:', i18n.language);
+    };
     const useStyles = makeStyles((t) => ({
         resumeBtn: {
             color: theme.primary,
@@ -70,120 +76,46 @@ function Landing() {
     return (
         <div className='landing'>
             <div className='landing--container'>
-                <div
-                    className='landing--container-left'
-                    style={{ backgroundColor: theme.primary }}
-                >
+                <div className='landing--container-left' style={{ backgroundColor: theme.primary }}>
+                    <div className='landing'>
+                        <Button onClick={() => changeLanguage('en')}>English</Button>
+                        <Button onClick={() => changeLanguage('pt')}>Português</Button>
+                    </div>
                     <div className='lcl--content'>
                         {socialsData.linkedIn && (
-                            <a
-                                href={socialsData.linkedIn}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaLinkedin
-                                    className='landing--social'
-                                    style={{ color: theme.secondary }}
-                                    aria-label='LinkedIn'
-                                />
+                            <a href={socialsData.linkedIn} target='_blank' rel='noreferrer'>
+                                <FaLinkedin className='landing--social' style={{ color: theme.secondary }} aria-label='LinkedIn' />
                             </a>
                         )}
                         {socialsData.github && (
-                            <a
-                                href={socialsData.github}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaGithub
-                                    className='landing--social'
-                                    style={{ color: theme.secondary }}
-                                    aria-label='GitHub'
-                                />
+                            <a href={socialsData.github} target='_blank' rel='noreferrer'>
+                                <FaGithub className='landing--social' style={{ color: theme.secondary }} aria-label='GitHub' />
                             </a>
                         )}
-                        {/* {socialsData.twitter && (
-                            <a
-                                href={socialsData.twitter}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaTwitter
-                                    className='landing--social'
-                                    style={{ color: theme.secondary }}
-                                    aria-label='Twitter'
-                                />
-                            </a>
-                        )}
-                        {socialsData.youtube && (
-                            <a
-                                href={socialsData.youtube}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaYoutube
-                                    className='landing--social'
-                                    style={{ color: theme.secondary }}
-                                    aria-label='YouTube'
-                                />
-                            </a>
-                        )}
-                        {socialsData.blogger && (
-                            <a
-                                href={socialsData.blogger}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaBlogger
-                                    className='landing--social'
-                                    style={{ color: theme.secondary }}
-                                    aria-label='Blogger'
-                                />
-                            </a>
-                        )} */}
                     </div>
                 </div>
-                <img
-                    src={headerData.image}
-                    alt=''
-                    className='landing--img'
+                <img src={headerData.image} alt='' className='landing--img'
                     style={{
                         opacity: `${drawerOpen ? '0' : '1'}`,
                         borderColor: theme.secondary,
                     }}
                 />
-                <div
-                    className='landing--container-right'
-                    style={{ backgroundColor: theme.secondary }}
-                >
-                    <div
-                        className='lcr--content'
-                        style={{ color: theme.tertiary }}
-                    >
-                        <h6>{headerData.title}</h6>
-                        <h1>{headerData.name}</h1>
-                        <p>{headerData.desciption}</p>
-
+                <div className='landing--container-right' style={{ backgroundColor: theme.secondary }}>
+                    <div className='lcr--content' style={{ color: theme.tertiary }}>
+                        <h6>{t('header.title')}</h6>
+                        <h1>{t('header.name')}</h1>
+                        <p>{t('header.description')}</p>
                         <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (
-                                <a
-                                    href={headerData.resumePdf}
-                                    download='resume'
-                                    target='_blank'
-                                    rel='noreferrer'
-                                >
+                                <a href={headerData.resumePdf} download='resume' target='_blank' rel='noreferrer'>
                                     <Button className={classes.resumeBtn}>
-                                        Download CV
+                                        {t('downloadCV')}
                                     </Button>
                                 </a>
                             )}
-                            <NavLink
-                                to='/#contacts'
-                                smooth={true}
-                                spy='true'
-                                duration={2000}
-                            >
+                            <NavLink to='/#contacts' smooth={true} spy='true' duration={2000}>
                                 <Button className={classes.contactBtn}>
-                                    Contact
+                                    {t('contact')}
                                 </Button>
                             </NavLink>
                         </div>
@@ -193,5 +125,6 @@ function Landing() {
         </div>
     );
 }
+
 
 export default Landing;

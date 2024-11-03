@@ -1,14 +1,13 @@
 import React, { useContext } from 'react';
-
+import { useTranslation } from 'react-i18next';
 import './About.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { aboutData } from '../../data/aboutData'
-
-
+import { aboutData } from '../../data/aboutData';
 
 function About() {
-
+    const { t } = useTranslation();
     const { theme } = useContext(ThemeContext);
+
     return (
         <div className="about" id="about" style={{backgroundColor: theme.secondary}}>
             <div className="line-styling">
@@ -18,8 +17,10 @@ function About() {
             </div>
             <div className="about-body">
                 <div className="about-description">
-                    <h2 style={{color: theme.primary}}>{aboutData.title}</h2>
-                    <p style={{color:theme.tertiary80}}>{aboutData.description1}<br/><br/>{aboutData.description2}</p>
+                    <h2 style={{color: theme.primary}}>{t('about.title')}</h2>
+                    <p style={{color:theme.tertiary80}}>
+                        {t('about.description1')}<br/><br/>{t('about.description2')}
+                    </p>
                 </div>
                 <div className="about-img">
                     <img 
@@ -29,8 +30,7 @@ function About() {
                 </div>
             </div>
         </div>
-
     )
 }
 
-export default About
+export default About;
