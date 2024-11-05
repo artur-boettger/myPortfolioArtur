@@ -81,11 +81,20 @@ export const data = {
                 endYear: 'Currently',
                 description: 'At GeoSapiens, I perform the role of developer for the Coletum product, where my work encompasses interface improvement, functionality implementation, API integration, and route definition. I have experience in the following technologies: Git/GitHub for version control, PHP/Symfony/Twig for back-end development, JS/Angular/React for building dynamic interfaces, Postman for testing, and Docker to facilitate container management. I am constantly committed to improving my skills and contributing to the ongoing success of the Coletum project.'
             },
+            {
+                id: 3,
+                company: "Grupo Nelson Heusi",
+                jobtitle: "Full Stack Developer",
+                startYear: "2024",
+                endYear: "Present",
+                description: "I worked as a Full Stack Developer focusing on automation solutions and data analysis. I implemented advanced Web Scraping techniques to optimize critical processes, resulting in significant time and resource savings. Concurrently, I contributed to the enhancement of a corporate web portal, where I developed and integrated interactive dashboards with dynamic filters. These implementations enabled deeper and more intuitive data analyses, facilitating data-driven decision-making. My role encompassed both front-end development, using technologies such as NextJs, Vue3, and Vuetify, as well as back-end development, working with languages like Node and frameworks such as NestJS. This multifaceted experience strengthened my ability to create comprehensive and efficient technological solutions, from conception to implementation."
+            }
         ],
     },
     header: {
         name: 'Artur Boettger',
         title: "Full Stack Developer",
+        subtitle: "Citizenships: Brazillian & Italian",
         description: "Errors are not roadblocks; they're stepping stones to success. Embrace challenges as opportunities for growth",
     },
     projects: {

@@ -19,6 +19,7 @@
     align-items: flex-end;
     justify-content: center;
     margin-right: 2rem;
+    
 }
 
 .experience-description > h1 {
@@ -38,6 +39,8 @@
     border-radius: 20px;
     margin-bottom: 1.5rem;
     transition: background-color 200ms ease-in-out;
+    overflow-y: auto;
+
 }
 
 .expcard-img {

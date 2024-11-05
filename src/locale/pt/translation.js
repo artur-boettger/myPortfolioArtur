@@ -6,7 +6,7 @@ import image4 from '../../assets/png/lapTravel.png'
 export const data = {
     about: {
         "title": "Quem sou eu?",
-        "description1": "Olá! Meu nome é Artur Boettger, e sou um desenvolvedor web baseado no Brasil.",
+        "description1": "Olá! Meu nome é Artur Boettger, e sou um desenvolvedor web que reside no Brasil.",
         "description2": "Atualmente estou cursando Sistemas para Internet na Universidade do Vale do Itajaí (Univali). O curso visa formar profissionais especializados em infraestrutura e desenvolvimento de sistemas web. Além dos meus estudos universitários, também estou fazendo um curso de desenvolvimento Front-End na Alura. Sou altamente proativo na busca por conhecimento, utilizando a vasta gama de conteúdo disponível na internet, incluindo recursos de inteligência artificial."
     },
     bio: "",
@@ -28,7 +28,7 @@ export const data = {
         {
             id: 2,
             title: 'Campeão Catarinense de Basquete',
-            details: 'Pode não ter uma ligação direta com o mercado de trabalho, mas mostra muita dedicação e trabalho em equipe',
+            details: 'Pode não ter uma ligação direta com o programação, mas mostra muita dedicação e trabalho em equipe',
             date: '2017',
             field: 'Esportes'
         }
@@ -78,14 +78,23 @@ export const data = {
                 company: 'GeoSapiens',
                 jobtitle: 'Desenvolvedor Full Stack',
                 startYear: '2023',
-                endYear: 'Atualmente',
+                endYear: '2024',
                 description: 'Na GeoSapiens, desempenho a função de desenvolvedor no produto Coletum, onde minha atuação abrange o aprimoramento da interface, implementação de funcionalidades, integração de APIs e definição de rotas. Possuo experiência nas seguintes tecnologias: Git/GitHub para controle de versão, PHP/Symfony/Twig para o desenvolvimento back-end, JS/Angular/React para a construção de interfaces dinâmicas, Postman para testes e Docker para facilitar a gestão de contêineres. Estou constantemente empenhado em aprimorar minhas habilidades e contribuir para o sucesso contínuo do projeto Coletum.'
+            },
+            {
+                id: 3,
+                company: 'Grupo Nelson Heusi',
+                jobtitle: 'Desenvolvedor Full Stack',
+                startYear: '2024',
+                endYear: 'Atualmente',
+                description: 'Atuei como Desenvolvedor Full Stack com foco em soluções de automação e análise de dados. Implementei técnicas avançadas de Web Scraping para otimizar processos críticos, resultando em significativa economia de tempo e recursos. Paralelamente, contribuí para o aprimoramento de um portal web corporativo, onde desenvolvi e integrei dashboards interativos com filtros dinâmicos. Essas implementações permitiram análises de dados mais profundas e intuitivas, facilitando a tomada de decisões baseadas em dados. Minha atuação abrangeu tanto o desenvolvimento front-end, utilizando tecnologias como NextJs, Vue3, Vuetify, quanto o back-end, trabalhando com linguagens como Node e frameworks como NestJS. Esta experiência multifacetada fortaleceu minha capacidade de criar soluções tecnológicas completas e eficientes, desde a concepção até a implementação.'
             },
         ],
     },
     header: {
         name: 'Artur Boettger',
         title: "Desenvolvedor Full Stack",
+        subtitle: "Cidadanias: Brasileira & italiana",
         description: "Erros não são obstáculos; são degraus para o sucesso. Encare os desafios como oportunidades de crescimento",
     },
     projects: {
