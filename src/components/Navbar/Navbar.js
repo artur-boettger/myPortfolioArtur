@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
+import { Button } from '@material-ui/core';
 import Fade from 'react-reveal/Fade';
 import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
 import { HiDocumentText } from 'react-icons/hi';
@@ -9,6 +10,7 @@ import { FaUser, FaFolderOpen } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
+import { useTranslation } from 'react-i18next';
 
 import './Navbar.css';
 import { headerData } from '../../data/headerData';
@@ -16,8 +18,17 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 
 function Navbar() {
     const { theme, setHandleDrawer } = useContext(ThemeContext);
+    const { t, i18n } = useTranslation();
+
 
     const [open, setOpen] = useState(false);
+
+    const changeLanguage = (lng) => {
+        console.log(`Changing language to: ${lng}`);
+        console.log('Current language:', i18n.language);
+        i18n.changeLanguage(lng);
+        console.log('New language:', i18n.language);
+    };
 
     const handleDrawerOpen = () => {
         setOpen(true);
@@ -136,10 +147,13 @@ function Navbar() {
     return (
         <div className='navbar'>
             <div  className='navbar--container'>
+                <div className='landing'>
+                        <Button onClick={() => changeLanguage('en')}>English</Button>
+                        <Button onClick={() => changeLanguage('pt')}>Português</Button>
+                    </div>
                 <h1 style={{ color: theme.secondary }}>
                     {shortname(headerData.name)}
                 </h1>
-
                 <IoMenuSharp
                     className={classes.navMenu}
                     onClick={handleDrawerOpen}
@@ -209,7 +223,7 @@ function Navbar() {
                                 <div className={classes.drawerItem}>
                                     <FaUser className={classes.drawerIcon} />
                                     <span className={classes.drawerLinks}>
-                                        Sobre
+                                        About
                                     </span>
                                 </div>
                             </NavLink>
@@ -263,7 +277,7 @@ function Navbar() {
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                        Projetos
+                                        Projects
                                     </span>
                                 </div>
                             </NavLink>
@@ -279,7 +293,7 @@ function Navbar() {
                                 <div className={classes.drawerItem}>
                                     <MdPhone className={classes.drawerIcon} />
                                     <span className={classes.drawerLinks}>
-                                        Contato
+                                        Contact
                                     </span>
                                 </div>
                             </NavLink>

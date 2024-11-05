@@ -19,12 +19,6 @@ function Landing() {
 
     const { t, i18n } = useTranslation();
 
-    const changeLanguage = (lng) => {
-        console.log(`Changing language to: ${lng}`);
-        console.log('Current language:', i18n.language);
-        i18n.changeLanguage(lng);
-        console.log('New language:', i18n.language);
-    };
     const useStyles = makeStyles((t) => ({
         resumeBtn: {
             color: theme.primary,
@@ -77,10 +71,6 @@ function Landing() {
         <div className='landing'>
             <div className='landing--container'>
                 <div className='landing--container-left' style={{ backgroundColor: theme.primary }}>
-                    <div className='landing'>
-                        <Button onClick={() => changeLanguage('en')}>English</Button>
-                        <Button onClick={() => changeLanguage('pt')}>Português</Button>
-                    </div>
                     <div className='lcl--content'>
                         {socialsData.linkedIn && (
                             <a href={socialsData.linkedIn} target='_blank' rel='noreferrer'>
@@ -104,7 +94,7 @@ function Landing() {
                     <div className='lcr--content' style={{ color: theme.tertiary }}>
                         <h6>{t('header.title')}</h6>
                         <h1>{t('header.name')}</h1>
-                        <h6>{t('header.subtitle')}</h6> 
+                        <h6 style={{ padding: "1rem" }}>{t('header.subtitle')}</h6> 
                         <p>{t('header.description')}</p>
                         <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (
