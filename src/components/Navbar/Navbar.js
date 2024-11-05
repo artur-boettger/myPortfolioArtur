@@ -24,10 +24,7 @@ function Navbar() {
     const [open, setOpen] = useState(false);
 
     const changeLanguage = (lng) => {
-        console.log(`Changing language to: ${lng}`);
-        console.log('Current language:', i18n.language);
         i18n.changeLanguage(lng);
-        console.log('New language:', i18n.language);
     };
 
     const handleDrawerOpen = () => {
