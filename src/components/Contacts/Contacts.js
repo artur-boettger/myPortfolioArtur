@@ -183,7 +183,7 @@ function Contacts() {
                             </p>
                         </a>
                         <a
-                            href="https://wa.me/554793300-5684?text=Hello"
+                            href="https://w.app/ABtech"
                             className='personal-details'
                         >
                             <div className={classes.detailsIcon}>
