@@ -86,7 +86,7 @@ export const data = {
                 company: 'Grupo Nelson Heusi',
                 jobtitle: 'Desenvolvedor Full Stack',
                 startYear: '2024',
-                endYear: 'Atualmente',
+                endYear: '2025',
                 description: 'Atuei como Desenvolvedor Full Stack com foco em soluções de automação e análise de dados. Implementei técnicas avançadas de Web Scraping para otimizar processos críticos, resultando em significativa economia de tempo e recursos. Paralelamente, contribuí para o aprimoramento de um portal web corporativo, onde desenvolvi e integrei dashboards interativos com filtros dinâmicos. Essas implementações permitiram análises de dados mais profundas e intuitivas, facilitando a tomada de decisões baseadas em dados. Minha atuação abrangeu tanto o desenvolvimento front-end, utilizando tecnologias como NextJs, Vue3, Vuetify, quanto o back-end, trabalhando com linguagens como Node e frameworks como NestJS. Esta experiência multifacetada fortaleceu minha capacidade de criar soluções tecnológicas completas e eficientes, desde a concepção até a implementação.'
             },
         ],
@@ -95,7 +95,7 @@ export const data = {
         name: 'Artur Boettger',
         title: "Desenvolvedor Full Stack",
         subtitle: "Cidadanias: Brasileira & italiana",
-        description: "Erros não são obstáculos; são degraus para o sucesso. Encare os desafios como oportunidades de crescimento",
+        description: "Encare os desafios como oportunidades de crescimento",
     },
     projects: {
         title: "Projetos",

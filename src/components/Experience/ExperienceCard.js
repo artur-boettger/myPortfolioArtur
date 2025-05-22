@@ -28,7 +28,7 @@ function ExperienceCard({id, company, jobtitle, startYear, endYear, description}
     return (
         <Fade bottom>
             <div key={id} className={`experience-card ${classes.experienceCard}`}>
-                <div className="expcard-img" style={{backgroundColor: theme.primary}}>
+                <div className="expcard-img" style={{backgroundColor: theme.primary, margin: "1rem"}}>
                     <img src={theme.type === 'light' ? expImgBlack : expImgWhite} alt="" />
                 </div>
                 <div className="experience-details">
