@@ -112,11 +112,11 @@ export const data = {
             },
             {
                 id: 2,
-                projectName: 'americoConsultoria',
-                projectDesc: 'Projeto feito para uma empresa de consultoria na área de comércio exterior',
-                tags: ['HTML', 'CSS', 'Javascript', 'Scroll Reveal'],
-                code: 'https://github.com/artur-boettger/siteAmericoConsultoria',
-                demo: 'https://americomex.com.br/',
+                projectName: 'TLD Global',
+                projectDesc: 'Projeto feito para uma empresa relacionada a comércio exterior',
+                tags: ['React', 'Tailwind', 'JavaScript', 'Material UI'],
+                code: '',
+                demo: 'https://www.tldglobal.com.br/',
                 image: image2
             },
             {
